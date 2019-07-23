@@ -1,24 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import AccountContextProvider from './contexts/AccountContext';
+import AccountList from './components/AccountList';
+import Navbar from './components/Navbar';
+import AccountForm from './components/AccountForm';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <AccountContextProvider>
+        <Navbar />
+        <AccountList />
+        <AccountForm />
+      </AccountContextProvider>
     </div>
   );
 }
