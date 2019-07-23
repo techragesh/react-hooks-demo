@@ -23,7 +23,7 @@ const AccountForm = () => {
       />
       <input
         type="text"
-        placeholder="Role"
+        placeholder="Account Role"
         value={role}
         onChange={e => setRole(e.target.value)}
       />

@@ -6,7 +6,7 @@ const AccountList = () => {
   const { accounts } = useContext(AccountContext);
 
   return (
-    <div className="book-list">
+    <div className="account-list">
       <ul>
         {accounts.map(account => {
           return <AccountDetail account={account} key={account.id} />;

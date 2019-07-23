@@ -5,8 +5,8 @@ const AccountDetail = ({ account }) => {
   const { deleteAccount } = useContext(AccountContext);
   return (
     <li onClick={() => deleteAccount(account.id)}>
-      <div className="title">{account.name}</div>
-      <div className="author">{account.role}</div>
+      <div className="name">{account.name}</div>
+      <div className="role">{account.role}</div>
     </li>
   );
 };
