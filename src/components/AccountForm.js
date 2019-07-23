@@ -4,11 +4,11 @@ import { AccountContext } from '../contexts/AccountContext';
 const AccountForm = () => {
   const [name, setName] = useState('');
   const [role, setRole] = useState('');
-  const { addAccount } = useContext(AccountContext);
+  const { dispatch } = useContext(AccountContext);
 
   const handleSubmit = e => {
     e.preventDefault();
-    addAccount(name, role);
+    dispatch({ type: 'ADD_ACCOUNT', account: { name, role } });
     setName('');
     setRole('');
   };
