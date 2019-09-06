@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e2b2fa02-8ed8-4f92-a26b-7f4f36320c0a/deploy-status)](https://app.netlify.com/sites/confident-wright-fd2e51/deploys)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
